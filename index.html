@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Book Tickets Online</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MovieFlix</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Theaters</a></li>
+                    <li><a href = "./booking.html">Bookings</a>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Book Your Movie Tickets Online</h2>
+                <p>Skip the line and secure your seats in advance</p>
+            </div>
+        </section>
+
+        <section class="movie-section now-showing">
+            <h2><i class="fas fa-film"></i> Now Showing</h2>
+            <div class="movie-grid">
+                <!-- Movie 1 -->
+                <div class="movie-card">
+                    <img src="./Pics/nowshowing/Avengersendgame.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Avengers: Endgame</h3>
+                        <p>Action, Adventure | 3h 1m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="./Pics/nowshowing/dune.webp" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Dune</h3>
+                        <p>Sci-Fi, Adventure | 2h 35m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$11.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="./Pics/nowshowing/aworkingman.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>A Working Man</h3>
+                        <p>Action, Thriller | 1h 56m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/nowshowing/sonic.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Sonic the Hedgehog</h3>
+                        <p>Action, Adventure | 1h 59m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/nowshowing/electric.webp" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>The Electric State</h3>
+                        <p>Sci-Fi, Adventure | 2h 8m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/nowshowing/novocaine.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Novocaine</h3>
+                        <p>Action, Thriller | 1h 50m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$11.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="movie-section upcoming">
+            <h2><i class="fas fa-calendar-alt"></i> Upcoming Movies</h2>
+            <div class="movie-grid">
+                
+                <div class="movie-card">
+                    <img src="./Pics/upcoming/Karatekid.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>The Karate Kid: Legends</h3>
+                        <p>Action, Sport | 1h 58m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/upcoming/superman.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Superman</h3>
+                        <p>Action, Sci-Fi | Unknown</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$15.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/upcoming/thunderbolts.jpeg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Thunderbolts</h3>
+                        <p>Action, Adventure | 2h 6m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/upcoming/f1.avif" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>F1</h3>
+                        <p>Action, Sport | 2 hours</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$13.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/upcoming/avatar.webp" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Avatar: Fire and Ash</h3>
+                        <p>Action, Sci-Fi | 3h 12m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$14.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/upcoming/mi1.webp" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Mission Impossible: The Last Reckoning</h3>
+                        <p>Action, Thriller | 2 hours</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section premium">
+            <h2><i class="fas fa-crown"></i> Premium Screenings</h2>
+            <div class="movie-grid">
+                
+                <div class="movie-card">
+                    <img src="./Pics/premiumscreenings/theunion.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>The Union</h3>
+                        <p>Action, Thriller | 1h 47m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$25.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/premiumscreenings/backinaction.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Havoc</h3>
+                        <p>Action, Comedy | 1h 54m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$22.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/premiumscreenings/stree2.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Stree 2</h3>
+                        <p>Horror, Comedy | 2h 29m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/premiumscreenings/babyjohn.webp" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Baby John</h3>
+                        <p>Action, Drama | 2h 41m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$23.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section imax">
+            <h2><i class="fas fa-vr-cardboard"></i> 3D & IMAX Shows</h2>
+            <div class="movie-grid">
+                
+                <div class="movie-card">
+                    <img src="./Pics/3D/smile2.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Smile 2</h3>
+                        <p>Horror, Mystery | 2h 12m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$18.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/3D/Conjuring.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>The Conjuring: The Devil Made Me Do It</h3>
+                        <p>Horror, Mystery | 1h 52m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/3D/tord.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>Tuth or Dare</h3>
+                        <p>Action, Horror | 1h 40m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$20.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="./Pics/3D/thegorge.jpg" alt="Movie Poster">
+                    <div class="movie-info">
+                        <h3>The Gorge</h3>
+                        <p>Action, Sci-Fi | 2h 7m</p>
+                        <div class="showtimes">
+                            <select class="time-selector">
+                                <option value="">Select showtime</option>
+                                <option value="2023-12-15T18:00">Dec 15, 6:00 PM</option>
+                                <option value="2023-12-15T21:30">Dec 15, 9:30 PM</option>
+                                <option value="2023-12-16T14:00">Dec 16, 2:00 PM</option>
+                            </select><br><br>
+                        </div>
+                        <div class="ticket-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" min="0" max="10" value="0" class="ticket-qty">
+                            <button class="increment">+</button>
+                            <span class="price">$21.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers">
+            <h2><i class="fas fa-tag"></i> Special Discount Offers</h2>
+            <div class="offer-grid">
+                <!-- 3 offers -->
+                <div class="offer-card">
+                    <h3>Student Discount</h3>
+                    <p>20% off with valid student ID</p>
+                </div>
+                <div class="offer-card">
+                    <h3>Family Package</h3>
+                    <p>4 tickets for the price of 3</p>
+                </div>
+                <div class="offer-card">
+                    <h3>Early Bird Special</h3>
+                    <p>15% off for shows before 5pm</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+            <div class="cart-actions">
+                <button id="save-favorite" class="btn-secondary">
+                    <i class="far fa-bookmark"></i> Save as Favorite
+                </button>
+                <button id="apply-favorite" class="btn-secondary">
+                    <i class="fas fa-bookmark"></i> Apply Favorite
+                </button>
+            </div>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Movie</th>
+                        <th>ShowTime</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be populated by JavaScript -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Subtotal</td>
+                        <td id="subtotal">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Tax (8%)</td>
+                        <td id="tax">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="total">$0.00</td>
+                        <td></td>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+            <button id="checkout-btn" class="btn-primary"><a href = "./checkout.html"></a>Proceed to checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About MovieFlix</h3>
+                    <p>Your premier destination for online movie ticket bookings.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MovieFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

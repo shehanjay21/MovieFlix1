@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Booking Confirmation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="./confirmation.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MovieFlix</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Theaters</a></li>
+                    <li><a href = "./index.html">Bookings</a>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container confirmation-container">
+        <div class="confirmation-card">
+            <div class="confirmation-header">
+                <i class="fas fa-check-circle"></i>
+                <h1>Booking Confirmed!</h1>
+                <p>Thank you for your purchase</p>
+            </div>
+            
+            <div class="confirmation-details">
+                <div class="detail-row">
+                    <span class="detail-label">Booking Reference:</span>
+                    <span class="detail-value" id="booking-ref">Loading...</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Movie:</span>
+                    <span class="detail-value" id="movie-title">Loading...</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Date & Time:</span>
+                    <span class="detail-value" id="show-time">Loading...</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Seats:</span>
+                    <span class="detail-value" id="seat-details">Loading...</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Total Paid:</span>
+                    <span class="detail-value" id="total-paid">Loading...</span>
+                </div>
+            </div>
+            
+            <div class="confirmation-actions">
+                <button class="btn-primary" id="print-ticket">
+                    <i class="fas fa-print"></i> Print Ticket
+                </button>
+                <button class="btn-secondary" id="back-to-home">
+                    <i class="fas fa-home"></i> Back to Home
+                </button>
+            </div>
+            
+            <div class="confirmation-footer">
+                <p>An email confirmation has been sent to <span id="customer-email">user@example.com</span></p>
+                <p>Please arrive at least 30 minutes before showtime</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2023 MovieFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="./conformation.js"></script>
+</body>
+</html>

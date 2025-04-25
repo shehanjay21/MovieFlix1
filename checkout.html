@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Checkout</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="./style1.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MovieFlix</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Theaters</a></li>
+                    <li><a href="./index.html">Bookings</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Book Your Movie Tickets Online</h2>
+                <p>Skip the line and secure your seats in advance</p>
+            </div>
+        </section>
+    </main>
+
+    <main class="container checkout-container">
+        <h1><i class="fas fa-ticket-alt"></i> Checkout</h1>
+        
+        <div class="checkout-grid">
+            <section class="order-summary">
+                <h2>Your Order</h2>
+                <div class="order-items" id="order-items">
+                    <!-- Order items will be populated by JavaScript -->
+                </div>
+                <div class="order-totals">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="order-subtotal">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Tax (8%):</span>
+                        <span id="order-tax">$0.00</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span>Total:</span>
+                        <span id="order-total">$0.00</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout-form">
+                <form id="payment-form" >
+                    <h2>Personal Information</h2>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <h2>Seat Selection</h2>
+                    <div class="form-group">
+                        <label for="seat-preference">Seat Preference</label>
+                        <select id="seat-preference" name="seat-preference">
+                            <option value="any">Any Available</option>
+                            <option value="front">Front Section</option>
+                            <option value="middle">Middle Section</option>
+                            <option value="back">Back Section</option>
+                            <option value="aisle">Aisle Seat</option>
+                            <option value="center">Center Seat</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Requirements</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="wheelchair" name="special-needs" value="wheelchair">
+                            <label for="wheelchair">Wheelchair Access</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="hearing" name="special-needs" value="hearing">
+                            <label for="hearing">Hearing Assistance</label>
+                        </div>
+                    </div>
+
+                    <h2>Payment Information</h2>
+                    <div class="form-group">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name" name="card-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="back-to-cart">
+                            <i class="fas fa-arrow-left"></i> Back to Cart
+                        </button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-lock"></i>Pay Now
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About MovieFlix</h3>
+                    <p>Your premier destination for online movie ticket bookings.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MovieFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./checkout.js"></script>
+</body>
+</html>
